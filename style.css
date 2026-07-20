@@ -1905,7 +1905,7 @@ body {
 
 .brands-carousel-wrapper {
     width: 1796.4px;
-    /* 7个logo (229.2px * 7) + 6个gap (32px * 6) = 1604.4 + 192 = 1796.4px */
+    /* Visible window for the logo marquee. */
     height: 168px;
     /* 140px × 1.2 = 168px */
     margin-top: 70px;
@@ -1926,8 +1926,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     gap: 32px;
-    animation: scrollBrands 15s linear infinite;
-    /* 加快走马灯速度，从30s改为15s */
+    animation: scrollBrands 28s linear infinite;
     will-change: transform;
     /* 优化动画性能 */
     margin-top: 0;
@@ -1940,14 +1939,14 @@ body {
     }
 
     100% {
-        transform: translateX(calc(-1796.4px - 32px));
-        /* 精确移动到一组logo的宽度(1796.4px)+一个gap(32px)，实现无缝循环 */
+        transform: translateX(-3395.6px);
+        /* 13 logos * 229.2px + 13 gaps * 32px. */
     }
 }
 
 .brands-grid {
-    width: 1796.4px;
-    /* 7个logo (229.2px * 7) + 6个gap (32px * 6) = 1604.4 + 192 = 1796.4px */
+    width: 3363.6px;
+    /* 13 logos (229.2px * 13) + 12 gaps (32px * 12). */
     height: 168px;
     /* 140px × 1.2 = 168px */
     margin-top: 0;
