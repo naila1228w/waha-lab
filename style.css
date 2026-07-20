@@ -2963,17 +2963,29 @@ body {
     object-fit: cover;
 }
 
+.case-media-contain img {
+    object-fit: contain;
+}
+
+.case-media-white {
+    background: #fff;
+}
+
+.case-media-black {
+    background: #000;
+}
+
 .case-media-portrait {
     height: 899.12px;
 }
 
 .case-media-wide {
-    width: 1380px;
+    width: 100%;
     height: 1840px;
 }
 
 .case-media-final {
-    width: 1386px;
+    width: 100%;
     height: 1848px;
 }
 
@@ -2994,7 +3006,7 @@ body {
 
     .case-page {
         width: 100%;
-        max-width: 1920px;
+        max-width: none;
     }
 }
 
