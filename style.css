@@ -2879,8 +2879,8 @@ body {
 }
 
 .case-intro {
-    width: calc(100% - 58px);
-    margin: 24.9px 24.592px 0 29px;
+    width: calc(100% - 136px);
+    margin: 24.9px 68px 0;
     display: grid;
     grid-template-columns: 675px minmax(0, 673.73px);
     justify-content: space-between;
@@ -2935,8 +2935,8 @@ body {
 }
 
 .case-media-stack {
-    width: calc(100% - 58px);
-    margin: 318px 24.592px 0 29px;
+    width: calc(100% - 136px);
+    margin: 318px 68px 0;
     display: flex;
     flex-direction: column;
     gap: 39px;
@@ -2947,7 +2947,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 674.34px));
     justify-content: space-between;
-    gap: 37.728px;
+    gap: 32px;
 }
 
 .case-media {
