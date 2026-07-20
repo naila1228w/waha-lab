@@ -2374,6 +2374,17 @@ body {
     text-decoration: none;
 }
 
+.project-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-link:hover .work-image,
+.project-link:hover .work-page-image {
+    opacity: 0.82;
+    transform: scale(0.992);
+}
+
 .featured-work-card {
     display: block;
 }
@@ -2487,6 +2498,131 @@ body {
     margin-top: 180px;
 }
 
+.project-detail-page {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 120px 68px 0;
+    background-color: #000000;
+    color: #ffffff;
+    min-width: 0;
+}
+
+.project-detail-hero {
+    display: grid;
+    grid-template-columns: 1fr minmax(360px, 640px);
+    gap: 40px;
+    align-items: end;
+    min-height: 64vh;
+    padding-bottom: 72px;
+    min-width: 0;
+}
+
+.project-detail-eyebrow,
+.project-detail-lead,
+.project-detail-copy,
+.project-detail-meta-label,
+.project-detail-meta-value {
+    font-family: 'Lab Grotesque', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.project-detail-eyebrow {
+    grid-column: 1 / -1;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.project-detail-heading {
+    min-width: 0;
+}
+
+.project-detail-title {
+    font-family: 'PP Editorial New', serif;
+    font-size: clamp(96px, 18vw, 240px);
+    line-height: 0.88;
+    font-weight: normal;
+}
+
+.project-detail-lead {
+    max-width: 100%;
+    min-width: 0;
+    margin-bottom: 12px;
+    font-size: clamp(28px, 3vw, 44px);
+    line-height: 1.08;
+    overflow-wrap: anywhere;
+}
+
+.project-detail-media {
+    width: 100%;
+}
+
+.project-detail-image {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1784 / 980;
+    object-fit: cover;
+    background: #1a1a1a;
+}
+
+.project-detail-info,
+.project-detail-story {
+    margin-top: 96px;
+}
+
+.project-detail-block + .project-detail-block {
+    margin-top: 48px;
+}
+
+.project-detail-copy {
+    max-width: 100%;
+    font-size: 22px;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.88);
+    overflow-wrap: anywhere;
+}
+
+.project-detail-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 40px;
+}
+
+.project-detail-meta-item {
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.project-detail-meta-label {
+    font-size: 14px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.62);
+    text-transform: uppercase;
+    letter-spacing: 0;
+}
+
+.project-detail-meta-value {
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+.project-detail-story-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 40px;
+    margin-top: 28px;
+    min-width: 0;
+}
+
+.project-detail-footer {
+    margin-top: 180px;
+}
+
 @media screen and (min-width: 1921px) {
     .work-page {
         padding-left: 68px;
@@ -2496,6 +2632,11 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1920px) {
     .work-page {
+        padding-left: 68px;
+        padding-right: 68px;
+    }
+
+    .project-detail-page {
         padding-left: 68px;
         padding-right: 68px;
     }
@@ -2575,6 +2716,47 @@ body {
     }
 
     .work-footer {
+        margin-top: 100px;
+    }
+
+    .project-detail-page {
+        padding: 88px 16px 0;
+        overflow-x: hidden;
+    }
+
+    .project-detail-hero {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        min-height: 54vh;
+        padding-bottom: 56px;
+    }
+
+    .project-detail-title {
+        font-size: clamp(72px, 24vw, 112px);
+    }
+
+    .project-detail-lead {
+        margin-bottom: 0;
+        font-size: 28px;
+        line-height: 1.12;
+    }
+
+    .project-detail-info,
+    .project-detail-story {
+        margin-top: 72px;
+    }
+
+    .project-detail-copy {
+        font-size: 18px;
+    }
+
+    .project-detail-meta-grid,
+    .project-detail-story-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-detail-footer {
         margin-top: 100px;
     }
 
