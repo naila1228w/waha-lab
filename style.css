@@ -2821,7 +2821,7 @@ body {
 
 .case-header-inner {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1920px;
     height: 56px;
     margin: 0 auto;
     padding: 0 68px;
@@ -2855,7 +2855,6 @@ body {
 
 .case-page {
     width: 100%;
-    max-width: 1440px;
     margin: 0 auto;
     background: #000;
 }
@@ -2984,6 +2983,15 @@ body {
         padding-left: 68px;
         padding-right: 68px;
     }
+
+    .case-header-inner {
+        max-width: 1920px;
+    }
+
+    .case-page {
+        width: 100%;
+        max-width: 1920px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1920px) {
@@ -2995,6 +3003,11 @@ body {
     .project-detail-page {
         padding-left: 68px;
         padding-right: 68px;
+    }
+
+    .case-page {
+        width: 100%;
+        max-width: 100%;
     }
 }
 
