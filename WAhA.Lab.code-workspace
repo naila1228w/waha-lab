@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "WAhA.Lab",
+			"path": "."
+		},
+		{
+			"name": "Omada cursor website",
+			"path": "../Omada cursor website"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WAhA.Lab"
+	}
+}
