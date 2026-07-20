@@ -2804,6 +2804,181 @@ body {
     margin-top: 160px;
 }
 
+/* Case study template. MOONLEX uses this as the first reusable project-detail pattern. */
+.case-body {
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.case-header {
+    position: fixed;
+    inset: 0 0 auto;
+    height: 56px;
+    z-index: 1000;
+    mix-blend-mode: difference;
+}
+
+.case-header-inner {
+    width: 100%;
+    max-width: 1440px;
+    height: 56px;
+    margin: 0 auto;
+    padding: 0 68px;
+    display: grid;
+    grid-template-columns: 204px 1fr auto;
+    align-items: center;
+}
+
+.case-logo img {
+    width: 203.667px;
+    height: auto;
+    display: block;
+}
+
+.case-nav {
+    justify-self: center;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.case-nav a,
+.case-contact {
+    font-family: 'Lab Grotesque', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 24px;
+    line-height: 31.2px;
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.case-page {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background: #000;
+}
+
+.case-hero {
+    width: 100%;
+    height: 960px;
+    margin-top: 266px;
+    overflow: hidden;
+    background: #bcbcbc;
+}
+
+.case-hero-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.case-intro {
+    width: calc(100% - 58px);
+    margin: 24.9px 24.592px 0 29px;
+    display: grid;
+    grid-template-columns: 675px minmax(0, 673.73px);
+    justify-content: space-between;
+    align-items: start;
+}
+
+.case-intro-main h1 {
+    width: 655px;
+    font-family: 'PingFang SC', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 47.7px;
+    line-height: 60px;
+    letter-spacing: -1.25px;
+    font-weight: 500;
+}
+
+.case-meta {
+    margin-top: 0;
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 22px;
+    font-family: 'PingFang SC', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.case-meta div:first-child {
+    margin-top: 31px;
+}
+
+.case-meta dt {
+    color: #9c9d9d;
+    font-weight: 400;
+}
+
+.case-meta dd {
+    color: #fff;
+    font-weight: 400;
+}
+
+.case-intro-copy {
+    width: 673.73px;
+    font-family: 'PingFang SC', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 31.3px;
+    line-height: 45.38px;
+    font-weight: 500;
+}
+
+.case-intro-copy p + p {
+    margin-top: 0;
+}
+
+.case-media-stack {
+    width: calc(100% - 58px);
+    margin: 318px 24.592px 0 29px;
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+
+.case-media-row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 674.34px));
+    justify-content: space-between;
+    gap: 37.728px;
+}
+
+.case-media {
+    margin: 0;
+    overflow: hidden;
+    background: #111;
+}
+
+.case-media img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.case-media-portrait {
+    height: 899.12px;
+}
+
+.case-media-wide {
+    width: 1380px;
+    height: 1840px;
+}
+
+.case-media-final {
+    width: 1386px;
+    height: 1848px;
+}
+
+.case-footer {
+    margin-top: 274px;
+    padding: 0 68px;
+}
+
 @media screen and (min-width: 1921px) {
     .work-page {
         padding-left: 68px;
@@ -3001,6 +3176,94 @@ body {
 
     .moonlex-footer {
         margin-top: 100px;
+    }
+
+    .case-header {
+        height: 48px;
+    }
+
+    .case-header-inner {
+        height: 48px;
+        padding: 0 16px;
+        grid-template-columns: 148px 1fr auto;
+        gap: 16px;
+    }
+
+    .case-logo img {
+        width: 148px;
+    }
+
+    .case-nav {
+        display: none;
+    }
+
+    .case-contact {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    .case-page {
+        overflow-x: hidden;
+    }
+
+    .case-hero {
+        height: 56vw;
+        min-height: 260px;
+        max-height: 420px;
+        margin-top: 120px;
+    }
+
+    .case-intro {
+        width: calc(100% - 32px);
+        margin: 64px 16px 0;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .case-intro-main h1 {
+        width: 100%;
+        font-size: 28px;
+        line-height: 1.25;
+        letter-spacing: -0.4px;
+    }
+
+    .case-meta {
+        height: auto;
+        gap: 16px;
+    }
+
+    .case-meta div:first-child {
+        margin-top: 0;
+    }
+
+    .case-intro-copy {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.55;
+    }
+
+    .case-media-stack {
+        width: calc(100% - 32px);
+        margin: 72px 16px 0;
+        gap: 16px;
+    }
+
+    .case-media-row {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .case-media-portrait,
+    .case-media-wide,
+    .case-media-final {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 4;
+    }
+
+    .case-footer {
+        margin-top: 100px;
+        padding: 0 16px;
     }
 
     .work-footer .footer-row {
