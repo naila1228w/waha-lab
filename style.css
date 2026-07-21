@@ -2381,7 +2381,7 @@ body {
 .project-link:hover .work-image,
 .project-link:hover .work-page-image {
     opacity: 0.82;
-    transform: scale(0.992);
+    transform: scale(1.015);
 }
 
 .featured-work-card {
@@ -2490,7 +2490,7 @@ body {
 .featured-work-card:hover .featured-work-image,
 .work-page-card:hover .work-page-image {
     opacity: 0.82;
-    transform: scale(0.992);
+    transform: scale(1.015);
 }
 
 .work-footer {
@@ -2876,6 +2876,8 @@ body {
     height: 100%;
     display: block;
     object-fit: cover;
+    transform: scale(1.025);
+    transform-origin: center center;
 }
 
 .case-intro {
@@ -2960,10 +2962,13 @@ body {
     height: auto;
     display: block;
     object-fit: contain;
+    transform: scale(1.025);
+    transform-origin: center center;
 }
 
 .case-media-contain img {
     object-fit: contain;
+    transform: scale(1.04);
 }
 
 .case-media-white {
