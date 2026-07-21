@@ -2882,13 +2882,13 @@ body {
     width: calc(100% - 136px);
     margin: 24.9px 68px 0;
     display: grid;
-    grid-template-columns: 675px minmax(0, 673.73px);
-    justify-content: space-between;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
     align-items: start;
 }
 
 .case-intro-main h1 {
-    width: 655px;
+    width: 100%;
     font-family: 'PingFang SC', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 47.7px;
     line-height: 60px;
@@ -2923,7 +2923,7 @@ body {
 }
 
 .case-intro-copy {
-    width: 673.73px;
+    width: 100%;
     font-family: 'PingFang SC', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 31.3px;
     line-height: 45.38px;
